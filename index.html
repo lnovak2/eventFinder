@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Finder</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+		<form action="#">
+			<label for="keyword">Keyword:<input type="text" name="keyword" id="keyword"></label>
+			<label for="location">Location:<input type="text" name="location" id="location"></label> 
+			<label for="date">Day/Date:<input type="text" name="date" id="date"></label>
+			<label for="within">Range(miles):<input type="text" name="within" id="within"></label>
+			<input type="submit" value="Submit" id="submit">
+		</form>
+	</header>
+	<div id="display">
+		<div id="list"></div><div id="map"></div>
+	</div>
+<script type="text/javascript" src="http://api.eventful.com/js/api"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="env.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1vkPRuTJSxapO8yw3rmckXRgmOcuBJ_0&callback=initMap"></script>
+</body>
+</html>
