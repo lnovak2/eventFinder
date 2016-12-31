@@ -3,26 +3,51 @@
 <head>
 	<title>Event Finder</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/float-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<header>
+		<div class="row">
+			<div class="col-3 title">
+				<h1>EventFinder</h1>
+			</div>
 		<form action="#">
-			<label for="keyword">Keyword:<input type="text" name="keyword" id="keyword"></label>
-			<label for="location">Location:<input type="text" name="location" id="location"></label> 
-			<label for="date">Day/Date:<input type="text" name="date" id="date"></label>
-			<label for="within">Range(miles):<input type="text" name="within" id="within"></label>
-			<input type="submit" value="Submit" id="submit">
-		</form>
+			<div class="col-2">
+				<label for="keyword">Keyword:</label>
+				<input type="text" name="keyword" id="keyword">
+			</div>
+			<div class="col-2">
+				<label for="date">Day/Date:</label>
+				<input type="text" name="date" id="date">
+			</div>
+			<div class="col-2">
+				<label for="location">Location:</label>
+				<input type="text" name="location" id="location">
+			</div>
+			<div class="col-2">
+				<label for="within">Range:</label>
+				<input type="text" name="within" id="within" placeholder="In miles">
+			</div>
+			<div class="col-1">
+				<input type="submit" value="Submit" id="submit">
+			</div>
+		</form>	
+		</div>
 	</header>
 	<div id="display">
-		<div id="list"></div><div id="map"></div>
+		<div id="initial_picture">
+			<h1>Search for a specific event or try something new tonight in your area!</h1>
+		</div>
+		<div id="results" class="no-padding row">
+			<div id="list" class="col-6"></div>
+			<div id="map" class="col-6"></div>
+		</div>
 	</div>
 <script type="text/javascript" src="https://api.eventful.com/js/api"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="env.js"></script>
-<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="js/env.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1vkPRuTJSxapO8yw3rmckXRgmOcuBJ_0&callback=initMap"></script>
 </body>
-</html>

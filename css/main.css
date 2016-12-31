@@ -1,0 +1,121 @@
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	overflow-y: hidden;
+}
+
+header {
+	position: fixed;
+	z-index: 9999;
+	background-color: #D0D0D0;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	overflow-x: auto;
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+}
+
+.row {
+	max-width: none;
+}
+
+.title h1{
+	width: 100%;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.no-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+#display{
+	height: 100%;
+}
+
+#results {
+	height: 100%;
+}
+
+#list {
+	display: inline-block;
+	overflow-y: scroll;
+	height: 100%;
+	background-color: #D0D0D0;
+}
+
+#map {
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+}
+
+
+#initial_picture {
+	background-image: url("../images/photo-left.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	color: white;
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.col-1 {
+	margin-top: 8px;
+}
+
+#buttons {
+	display: inline-block;
+}
+
+.nav{
+	text-align: center;
+	margin: 0px 10px 0px 10px;
+}
+
+#previous {
+	display: inline-block;
+}
+
+#buttons p{
+	display: inline-block;
+	margin: 0px 10px 0px 10px;
+}
+#next {
+	display: inline-block;
+}
+
+.data {
+	margin: 0px 10px 10px 10px;
+	padding: 10px;
+	height: auto;
+	background-color: white;
+}
+
+label[for='within'] {
+	padding-right: 10px;
+}
+
+.photo {
+	margin-right: 100px;
+	display: inline-block;
+	vertical-align: center;
+}
+
+.info {
+	display: inline-block;
+	vertical-align: center;
+}
